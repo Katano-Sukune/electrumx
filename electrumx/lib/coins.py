@@ -2994,3 +2994,14 @@ class XPChain(Coin):
 
 class XPChainTestnet(XPChain):
     NET = "testnet"
+    SHORTNAME = "TXPC"
+    XPUB_VERBYTES = bytes.fromhex("043587cf")
+    XPRV_VERBYTES = bytes.fromhex("04358394")
+    P2PKH_VERBYTE = bytes.fromhex("8a")
+    P2SH_VERBYTES = [bytes.fromhex("58")]
+    WIF_BYTE = bytes.fromhex("ef")
+    GENESIS_HASH = ('00000000f04d3bdebf907f79b4b096a05d763ac890612202ff9c9cc685221617')
+    RPC_PORT = 18762
+    TX_COUNT_HEIGHT = 295684
+    TX_COUNT = 594346
+    TX_PER_BLOCK = 2
