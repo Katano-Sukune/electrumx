@@ -2979,6 +2979,18 @@ class XPChain(Coin):
     NAME = "XPChain"
     SHORTNAME = "XPC"
     NET = "mainnet"
+    VALUE_PER_COIN = 10000
+    CHUNK_SIZE = 20160
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("4b")
+    P2SH_VERBYTES = [bytes.fromhex("1c")]
+    WIF_BYTE = bytes.fromhex("80")
+    GENESIS_HASH = ('000000009f4a28557aad6be5910c39d40e8a44e596d5ad485a9e4a7d4d72937c')
+    RPC_PORT = 8762
+    TX_COUNT = 1029366
+    TX_COUNT_HEIGHT = 269863
+    TX_PER_BLOCK = 4
 
 class XPChainTestnet(XPChain):
     NET = "testnet"
