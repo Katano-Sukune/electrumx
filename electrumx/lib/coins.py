@@ -2981,6 +2981,7 @@ class XPChain(Coin):
     NET = "mainnet"
     VALUE_PER_COIN = 10000
     CHUNK_SIZE = 20160
+    DESERIALIZER = lib_tx.DeserializerSegWit
     XPUB_VERBYTES = bytes.fromhex("0488b21e")
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
     P2PKH_VERBYTE = bytes.fromhex("4b")
