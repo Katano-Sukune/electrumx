@@ -3300,3 +3300,12 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RPC_PORT = 36442
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
+
+
+class ExperiencePoints(Pivx):
+    NAME = "eXperiencePoints"
+    SHORTNAME = "XP"
+    NET = "mainnet"
+
+class ExperiencePointsTestnet(ExperiencePoints):
+    NET = "testnet"
