@@ -3306,6 +3306,3 @@ class ExperiencePoints(Pivx):
     NAME = "eXperiencePoints"
     SHORTNAME = "XP"
     NET = "mainnet"
-
-class ExperiencePointsTestnet(ExperiencePoints):
-    NET = "testnet"
