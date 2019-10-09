@@ -3306,3 +3306,15 @@ class ExperiencePoints(Pivx):
     NAME = "eXperiencePoints"
     SHORTNAME = "XP"
     NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488B21E")
+    XPRV_VERBYTES = bytes.fromhex("0488ADE4")
+    GENESIS_HASH = ('0000077e296b47aa3003520719b8aafcba7c3975d39b4e19b899f14a70abe5f6')
+    P2PKH_VERBYTE = bytes.fromhex("37")
+    P2SH_VERBYTE = bytes.fromhex("0d")
+    WIF_BYTE = bytes.fromhex("49")
+    TX_COUNT_HEIGHT = 23437
+    TX_COUNT = 56918
+    TX_PER_BLOCK = 2
+    STATIC_BLOCK_HEADERS = False
+    RPC_PORT = 19325
+    ZEROCOIN_START_HEIGHT = 20
